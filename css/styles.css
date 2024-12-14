@@ -131,13 +131,21 @@ color: #404bbf;
 .page-hero.section{
     margin-left: auto;
     margin-right: auto;
-     width: 1440px;
+     max-width: 1440px;
      background-color:  rgba(46, 47, 66, 0.7);
-     background-image: url(../images/people-office\ 1.jpg);
+     background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/img-name.jpeg);
+
+     background-repeat: no-repeat;
+     background-position: center;
+     background-size: cover;
+
+
+    
 }
 
 .page-hero {
     padding: 188px 0;
+    
   
 }
 
@@ -149,6 +157,7 @@ color: #404bbf;
   
     background: #4d5ae5;
     cursor: pointer;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1); 
 }
 
 .button-hero:hover,
