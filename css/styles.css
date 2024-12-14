@@ -457,10 +457,10 @@ background-color: #2e2f42;
     color: #fff;
 }
 
-.footer-content {
+/* .footer-content {
     display: flex;
     align-items: baseline;
-}
+} */
 .footer-item {
     display: block;
     padding-top: 100px;
