@@ -312,14 +312,15 @@ color: #404bbf;
 .ourteam-item {
     width: calc((100% – 72px)/4);
     border-radius: 0 0 4px 4px;
-    width: 264px;
-    height: 380px;
+     width: 264px;
+    height: 428px;          
     box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
 
 }
 
 .employee-characteristics{
-    padding: 32px 0
+    padding: 32px 16px;
+    
 }
 
 .title-team {
@@ -348,6 +349,8 @@ color: #404bbf;
     height: 40px;
     fill: #4d5ae5;
    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+   margin: 8px 0 0 0;
 }
 
 .link-social {
@@ -393,11 +396,50 @@ color: #404bbf;
 
 
 .portfolio-item {
+    /* position: relative;
+      overflow: hidden; */
+   
     width: calc((100% - 48px)/3);
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), rgba(46, 47, 66, 0.08);
 
-    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.portfolio-item:hover .overlay,
+.portfolio-item:focus .overlay {
+    transform: translatey(0);
+    box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
 
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #3f51b5;
+
+    transform: translateY(100%);
+    transition: 250ms ease-in-out;
+}
+
+.overlay p {
+    color: #f4f4fd;;
+    padding: 40px 32px 164px 32px;
+    margin: 0;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+
+}
+
+.box {
+    position: relative;
+    width: 360px;
+    height: 300px;
+    margin: 0 auto;
+    background-color: #4d5ae5;;
+    overflow: hidden;
 }
 
 .container-item {
@@ -522,4 +564,7 @@ background-color: #2e2f42;
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
+
+
 
